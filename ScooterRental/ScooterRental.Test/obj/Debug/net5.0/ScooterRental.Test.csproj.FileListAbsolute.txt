@@ -101,3 +101,12 @@ C:\Users\Alvis-PC\Desktop\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\Scoo
 C:\Users\Alvis-PC\Desktop\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ref\ScooterRental.Test.dll
 C:\Users\Alvis-PC\Desktop\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.pdb
 C:\Users\Alvis-PC\Desktop\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.genruntimeconfig.cache
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.csproj.AssemblyReference.cache
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.AssemblyInfoInputs.cache
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.AssemblyInfo.cs
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.csproj.CoreCompileInputs.cache
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.dll
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ref\ScooterRental.Test.dll
+C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental.Test\obj\Debug\net5.0\ScooterRental.Test.pdb

@@ -44,5 +44,14 @@ namespace ScooterRental.Test
             //Assert
             Assert.Pass();
         }
+
+        [Test]
+        public void RemoveScooter_Not_Existing_Should_Fail()
+        {
+            //Arrange
+            var id = "1";
+            //Assert
+            Assert.Throws<ScppterNotFoundException>(_target.RemoveScooter(id););
+        }
     }
 }
