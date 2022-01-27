@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ScooterRental
+﻿namespace ScooterRental
 {
     public class Scooter
     {

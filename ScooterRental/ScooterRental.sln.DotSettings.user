@@ -1,12 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7b255b34_002D4f38_002D4d32_002Dbf5f_002D5ccd315c1235/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddScooter_1_020_ScooterAdded #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::73E9D195-361E-4E30-B911-659E87900AD8::net5.0::ScooterRental.Test.ScooterServiceTest&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Alvis-PC\AppData\Local\Temp\JetBrains\ReSharperPlatformVs16\vAny_1fb43540\CoverageData\_ScooterRental.1820355935\Snapshot\snapshot.utdcvr</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad316662_002D7685_002D42ad_002Dafce_002Dccb9d6c82c34/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AddScooter_1_020_ScooterAdded #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::73E9D195-361E-4E30-B911-659E87900AD8::net5.0::ScooterRental.Test.ScooterServiceTest.AddScooter_1_020_ScooterAdded&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::73E9D195-361E-4E30-B911-659E87900AD8::net5.0::ScooterRental.Test.ScooterServiceTest&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

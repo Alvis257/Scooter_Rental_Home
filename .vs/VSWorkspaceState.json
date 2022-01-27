@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Scooter"
+    "\\ScooterRental",
+    "\\ScooterRental\\ScooterRental",
+    "\\ScooterRental\\ScooterRental.Test"
   ],
+  "SelectedNode": "\\ScooterRental\\ScooterRental.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -22,3 +22,15 @@ C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental\obj\Debug\net5.
 C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.dll
 C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental\obj\Debug\net5.0\ref\ScooterRental.dll
 C:\Users\Alvis-PC\Desktop\New folder\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.pdb
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\bin\Debug\net5.0\ScooterRental.deps.json
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\bin\Debug\net5.0\ScooterRental.dll
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\bin\Debug\net5.0\ref\ScooterRental.dll
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\bin\Debug\net5.0\ScooterRental.pdb
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.csproj.AssemblyReference.cache
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.AssemblyInfoInputs.cache
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.AssemblyInfo.cs
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.csproj.CoreCompileInputs.cache
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.dll
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ref\ScooterRental.dll
+C:\Users\Alvis-PC\Desktop\Scooter\ScooterRental\ScooterRental\obj\Debug\net5.0\ScooterRental.pdb

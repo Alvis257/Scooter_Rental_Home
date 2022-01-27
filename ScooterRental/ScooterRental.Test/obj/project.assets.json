@@ -3876,11 +3876,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental.Test\\ScooterRental.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental.Test\\ScooterRental.Test.csproj",
       "projectName": "ScooterRental.Test",
-      "projectPath": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental.Test\\ScooterRental.Test.csproj",
+      "projectPath": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental.Test\\ScooterRental.Test.csproj",
       "packagesPath": "C:\\Users\\Alvis-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental.Test\\obj\\",
+      "outputPath": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3901,8 +3901,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental\\ScooterRental.csproj": {
-              "projectPath": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental\\ScooterRental.csproj"
+            "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental\\ScooterRental.csproj": {
+              "projectPath": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental\\ScooterRental.csproj"
             }
           }
         }

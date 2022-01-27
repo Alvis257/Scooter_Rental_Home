@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental\\ScooterRental.csproj",
+      "projectUniqueName": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental\\ScooterRental.csproj",
       "projectName": "ScooterRental",
-      "projectPath": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental\\ScooterRental.csproj",
+      "projectPath": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental\\ScooterRental.csproj",
       "packagesPath": "C:\\Users\\Alvis-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alvis-PC\\Desktop\\New folder\\ScooterRental\\ScooterRental\\obj\\",
+      "outputPath": "C:\\Users\\Alvis-PC\\Desktop\\Scooter\\ScooterRental\\ScooterRental\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

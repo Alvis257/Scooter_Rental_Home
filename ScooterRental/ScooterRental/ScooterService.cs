@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ScooterRental.Exceptions;
 
 namespace ScooterRental
@@ -10,7 +8,6 @@ namespace ScooterRental
     public class ScooterService : IScooterService
     {
         private List<Scooter> _scooters;
-
         public ScooterService()
         {
             _scooters = new List<Scooter>();
@@ -18,26 +15,36 @@ namespace ScooterRental
 
         public void AddScooter(string id, decimal pricePerMinute)
         {
-            if (pricePerMinute < 0)
+            if (pricePerMinute <= 0)
                 throw new InvalidPriceException();
-            _scooters.Add(new Scooter(id,pricePerMinute));
+            if (string.IsNullOrEmpty(id))
+                throw new ArgumentException("Invalid id provided");
+            if (_scooters.Any(s => s.Id == id))
+                throw new DuplicateScooterException();
+
+            _scooters.Add(new Scooter(id, pricePerMinute));
         }
 
         public void RemoveScooter(string id)
         {
-            if (_scooters.Any(s => s.Id == id))
+            if (_scooters.All(s => s.Id != id))
                 throw new ScooterNotFoundException();
-            
+
+            _scooters.Remove(_scooters.First(s => s.Id == id));
         }
 
         public IList<Scooter> GetScooters()
         {
-            throw new NotImplementedException();
+            return _scooters.ToList();
         }
 
         public Scooter GetScooterById(string scooterId)
         {
-            throw new NotImplementedException();
+            var scooter = _scooters.FirstOrDefault(s => s.Id == scooterId);
+            if (scooter == null)
+                throw new ScooterNotFoundException();
+
+            return scooter;
         }
     }
 }
