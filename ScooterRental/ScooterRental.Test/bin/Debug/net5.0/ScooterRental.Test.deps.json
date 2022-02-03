@@ -10,15 +10,15 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.0.0",
           "NUnit": "3.13.2",
-          "NUnit3TestAdapter": "4.2.0",
+          "NUnit3TestAdapter": "4.2.1",
           "ScooterRental": "1.0.0",
-          "coverlet.collector": "3.1.0"
+          "coverlet.collector": "3.1.1"
         },
         "runtime": {
           "ScooterRental.Test.dll": {}
         }
       },
-      "coverlet.collector/3.1.0": {},
+      "coverlet.collector/3.1.1": {},
       "Microsoft.CodeCoverage/17.0.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -358,7 +358,7 @@
           }
         }
       },
-      "NUnit3TestAdapter/4.2.0": {},
+      "NUnit3TestAdapter/4.2.1": {},
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -664,12 +664,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "coverlet.collector/3.1.0": {
+    "coverlet.collector/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
-      "path": "coverlet.collector/3.1.0",
-      "hashPath": "coverlet.collector.3.1.0.nupkg.sha512"
+      "sha512": "sha512-5x+/JfOC7+I+IJMWZ9yEbLxZJepGwdrqMJ1zuA1J2uAZ5tV3w4j2T+rbgkNQ1eH7aKdD0ifJIUtuOF+odzItHQ==",
+      "path": "coverlet.collector/3.1.1",
+      "hashPath": "coverlet.collector.3.1.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.0.0": {
       "type": "package",
@@ -748,12 +748,12 @@
       "path": "nunit/3.13.2",
       "hashPath": "nunit.3.13.2.nupkg.sha512"
     },
-    "NUnit3TestAdapter/4.2.0": {
+    "NUnit3TestAdapter/4.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-srJGb2SExp0Y77p85cDYl/OlfMjxN/jXPh/CQpQOQWiWpnSSPV9I/jtMNJWr1uzqed23rLYYetGgUrwSZUHgfg==",
-      "path": "nunit3testadapter/4.2.0",
-      "hashPath": "nunit3testadapter.4.2.0.nupkg.sha512"
+      "sha512": "sha512-kgH8VKsrcZZgNGQXRpVCrM7TnNz9li3b/snH+YmnXUNqsaWa1Xw9EQWHpbzq4Li2FbTjTE/E5N5HdLNXzZ8BpQ==",
+      "path": "nunit3testadapter/4.2.1",
+      "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
     },
     "System.Collections/4.0.11": {
       "type": "package",

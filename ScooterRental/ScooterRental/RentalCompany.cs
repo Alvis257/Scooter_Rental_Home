@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Channels;
 using ScooterRental.Exceptions;
 
 namespace ScooterRental
@@ -23,18 +25,44 @@ namespace ScooterRental
 
         public decimal CalculateIncome(int? year, bool includeNotCompletedRentals)
         {
-            throw new NotImplementedException();
+            decimal fullIncom = 0;
+            foreach (var scooter in _rentedScooter)
+            {
+                if (year != null)
+                {
+                    if (includeNotCompletedRentals == false)
+                    {
+                        fullIncom += _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
+                    }
+                    else fullIncom += _calculator.CalculateIncome(scooter.RentStarted, DateTime.Now, scooter.Price);
+
+                }
+                else if (Equals(scooter.RentStarted.Year, year))
+                {
+                    if (includeNotCompletedRentals == false)
+                    {
+                        fullIncom += _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
+                    }
+                    else fullIncom += _calculator.CalculateIncome(scooter.RentStarted, DateTime.Now, scooter.Price);
+                }
+            }
+
+            return fullIncom;
         }
 
         public decimal EndRent(string id)
         {
             var scooter = _scooterService.GetScooterById(id);
+
             if (!scooter.IsRented)
                 throw new ScooterNotRentedException();
 
             scooter.IsRented = false;
             var rented = _rentedScooter.First(s => s.Id == id && !s.RentEnded.HasValue);
             rented.RentEnded = DateTime.UtcNow;
+
+            if(rented.RentStarted > rented.RentEnded)
+                throw new NegativeTimeException();
 
             return _calculator.CalculateRent(rented);
         }

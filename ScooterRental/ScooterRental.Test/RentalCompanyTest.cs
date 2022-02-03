@@ -150,5 +150,85 @@ namespace ScooterRental.Test
             //Assert
             Assert.AreEqual(20.0m,result);
         }
+
+        [Test]
+        public void EndRent_ScooterRented30Minutes_Should_Return20()
+        {
+            //Arrange
+            _scooterService.AddScooter(_Id, 1);
+            _scooterService.GetScooterById(_Id).IsRented = true;
+            var startRent = DateTime.UtcNow.AddMinutes(-30);
+            _rentedScooters.Add(new RentedScooter
+            {
+                Id = _Id,
+                Price = 1,
+                RentStarted = startRent,
+            });
+
+            //Act
+            var result = _target.EndRent(_Id);
+
+            //Assert
+            Assert.AreEqual(20.0m, result);
+        }
+
+        [Test]
+        public void EndRent_ScooterRented24Hours_Should_Return20()
+        {
+            //Arrange
+            _scooterService.AddScooter(_Id, 1);
+            _scooterService.GetScooterById(_Id).IsRented = true;
+            var startRent = DateTime.UtcNow.AddHours(-24);
+            _rentedScooters.Add(new RentedScooter
+            {
+                Id = _Id,
+                Price = 1,
+                RentStarted = startRent,
+            });
+
+            //Act
+            var result = _target.EndRent(_Id);
+
+            //Assert
+            Assert.AreEqual(20.0m, result);
+        }
+
+        [Test]
+        public void EndRent_ScooterRentedNegativTime_Should_NegativTimeException()
+        {
+            //Arrange
+            _scooterService.AddScooter(_Id, 1);
+            _scooterService.GetScooterById(_Id).IsRented = true;
+            var startRent = DateTime.UtcNow.AddDays(1);
+            _rentedScooters.Add(new RentedScooter
+            {
+                Id = _Id,
+                Price = 1,
+                RentStarted = startRent,
+            });
+
+            //Assert
+            Assert.Throws<NegativeTimeException>(() => _target.EndRent(_Id));
+        }
+
+        [Test]
+        public void EndRent_ScooterRentedHigherThen20min_Should_RestartCount_After_00_00__Should_Be_40()
+        {
+            //Arrange
+            _scooterService.AddScooter(_Id, 1);
+            _scooterService.GetScooterById(_Id).IsRented = true;
+            var startRent = DateTime.UtcNow.AddDays(-2);
+            _rentedScooters.Add(new RentedScooter
+            {
+                Id = _Id,
+                Price = 1,
+                RentStarted = startRent,
+            });
+            //Act
+            var result = _target.EndRent(_Id);
+
+            //Assert
+            Assert.AreEqual(40.0m,result);
+        }
     }
 }
