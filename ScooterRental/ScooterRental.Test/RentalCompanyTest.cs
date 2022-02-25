@@ -10,9 +10,9 @@ namespace ScooterRental.Test
     {
         private IRentalCompany _target;
         private string _defaultName = "Company";
-        private IScooterService _scooterService;
         private string _Id => "1";
         private decimal _pricePerMinute => 0.20m;
+        private IScooterService _scooterService;
         private IList<RentedScooter> _rentedScooters;
         private IRentalCalculator _calculator;
 
@@ -173,7 +173,7 @@ namespace ScooterRental.Test
         }
 
         [Test]
-        public void EndRent_ScooterRented24Hours_Should_Return20()
+        public void EndRent_ScooterRented24Hours_Should_Return40()
         {
             //Arrange
             _scooterService.AddScooter(_Id, 1);
@@ -190,7 +190,7 @@ namespace ScooterRental.Test
             var result = _target.EndRent(_Id);
 
             //Assert
-            Assert.AreEqual(20.0m, result);
+            Assert.AreEqual(40.0m, result);
         }
 
         [Test]
@@ -217,7 +217,7 @@ namespace ScooterRental.Test
             //Arrange
             _scooterService.AddScooter(_Id, 1);
             _scooterService.GetScooterById(_Id).IsRented = true;
-            var startRent = DateTime.UtcNow.AddDays(-2);
+            var startRent = DateTime.UtcNow.AddDays(-1);
             _rentedScooters.Add(new RentedScooter
             {
                 Id = _Id,
@@ -229,6 +229,26 @@ namespace ScooterRental.Test
 
             //Assert
             Assert.AreEqual(40.0m,result);
+        }
+
+        [Test]
+        public void EndRent_ScooterRented_Rented_2_Days_Should_Be_60()
+        {
+            //Arrange
+            _scooterService.AddScooter(_Id, 1);
+            _scooterService.GetScooterById(_Id).IsRented = true;
+            var startRent = DateTime.UtcNow.AddDays(-2);
+            _rentedScooters.Add(new RentedScooter
+            {
+                Id = _Id,
+                Price = 1,
+                RentStarted = startRent,
+            });
+            //Act
+            var result = _target.EndRent(_Id);
+
+            //Assert
+            Assert.AreEqual(60.0m, result);
         }
     }
 }

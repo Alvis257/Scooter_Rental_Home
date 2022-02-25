@@ -8,7 +8,7 @@ namespace ScooterRental
 {
     public interface IRentalCalculator
     {
-        decimal CalculateRent(RentedScooter scooter);
-        public decimal CalculateIncome(DateTime RentStart, DateTime? RentEnd, decimal priceperminute);
+        decimal CalculateRent(RentedScooter scooter); 
+        decimal CalculateIncome(DateTime RentStart, DateTime? RentEnd, decimal priceperminute);
     }
 }

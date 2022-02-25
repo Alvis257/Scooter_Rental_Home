@@ -28,20 +28,39 @@ namespace ScooterRental
             decimal fullIncom = 0;
             foreach (var scooter in _rentedScooter)
             {
-                if (year != null)
+                if (year == null)
                 {
                     if (includeNotCompletedRentals == false)
                     {
-                        fullIncom += _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
+                        if (scooter.RentEnded != null)
+                        {
+                            fullIncom +=
+                                _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
+                        }
+                        else fullIncom += _calculator.CalculateIncome(scooter.RentStarted, DateTime.Now, scooter.Price);
+                    }
+                    else if (scooter.RentEnded != null)
+                    {
+                        fullIncom +=
+                            _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
                     }
                     else fullIncom += _calculator.CalculateIncome(scooter.RentStarted, DateTime.Now, scooter.Price);
-
                 }
-                else if (Equals(scooter.RentStarted.Year, year))
+                else if (Equals(year,scooter.RentStarted.Year))
                 {
                     if (includeNotCompletedRentals == false)
                     {
-                        fullIncom += _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
+                        if (scooter.RentEnded != null)
+                        {
+                            fullIncom +=
+                                _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
+                        }
+                        else fullIncom += _calculator.CalculateIncome(scooter.RentStarted, DateTime.Now, scooter.Price);
+                    }
+                    else if (scooter.RentEnded != null)
+                    {
+                        fullIncom +=
+                            _calculator.CalculateIncome(scooter.RentStarted, scooter.RentEnded, scooter.Price);
                     }
                     else fullIncom += _calculator.CalculateIncome(scooter.RentStarted, DateTime.Now, scooter.Price);
                 }
